@@ -1,17 +1,16 @@
 package Adapter
 
+import org.junit.jupiter.api.Test
+import kotlin.test.assertEquals
 
-fun main(args: Array<String>) {
-    val run = AdapterTest()
-    run.runTest()
-}
 
 class AdapterTest {
 
+    @Test
     fun runTest() {
         val adaptee = Adaptee()
         val target: ITarget = Adapter(adaptee)
 
-        println(target.GetRequest())
+        assertEquals("My Specific request.", target.getRequest())
     }
 }

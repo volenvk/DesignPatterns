@@ -1,7 +1,7 @@
 package Adapter
 
 class Adaptee {
-    fun GetSpecificRequest(): String{
-        return "Specific request.";
+    fun getSpecificRequest(): String{
+        return "My Specific request."
     }
 }
